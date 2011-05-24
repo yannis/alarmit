@@ -1,0 +1,1 @@
+require 'alarm_it'
