@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   s.files = [
     "CHANGELOG",
     "Gemfile",
-    "Gemfile.lock",
     "MIT-LICENSE",
     "README.rdoc",
     "Rakefile",
@@ -36,8 +35,6 @@ Gem::Specification.new do |s|
     "spec/alarm_it/alarm_spec.rb",
     "spec/alarm_it/alarmable_spec.rb",
     "spec/alarm_it/alarmer_spec.rb",
-    "spec/database.yml",
-    "spec/database.yml.sample",
     "spec/models.rb",
     "spec/schema.rb",
     "spec/spec_helper.rb"
