@@ -22,7 +22,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
     gemspec.name = "alarm_it"
-    gemspec.summary = "AlarmIt is a tagging plugin for Rails that provides multiple tagging contexts on a single model."
+    gemspec.version = '0.1'
+    gemspec.summary = "With AlarmIt, you could attach alarms to a single model."
     gemspec.description = "With AlarmIt, you could attach alarms to a single model."
     gemspec.email = "suvar3_7@mac.com"
     gemspec.homepage = ""
