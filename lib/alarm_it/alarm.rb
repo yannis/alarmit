@@ -1,7 +1,7 @@
 module AlarmIt
   class Alarm < ::ActiveRecord::Base
   
-    attr_accessible :name, :set_at, :repeat_at, :alarmable, :alarmable_type, :alarmable_id, :alarmer, :alarmer_type, :alarmer_id
+    attr_accessible :name, :set_at, :repeat_at, :alarmable, :alarmable_type, :alarmable_id, :alarmer, :alarmer_type, :alarmer_id, :inactivated_at
     
     belongs_to :alarmable, :polymorphic => true
     belongs_to :alarmer, :polymorphic => true
@@ -10,7 +10,7 @@ module AlarmIt
   
     validates_each :repeat_at do |alarmable, attr, value|
       if !alarmable.set_at.blank? and !alarmable.repeat_at.blank? and alarmable.repeat_at < alarmable.set_at
-        alarmable.errors.add("Repeat time", ": anterior to set time!")
+        alarmable.errors[:repeat_at] < ": anterior to set time!"
       end
     end
   
@@ -18,29 +18,37 @@ module AlarmIt
   
     default_scope order("alarms.set_at ASC")
     scope :inactivated, order("set_at DESC, repeat_at DESC").where("inactivated_at IS NOT NULL")
-    scope :active, order("set_at DESC, repeat_at DESC").where("inactivated_at IS NULL")
+    scope :pending, order("set_at DESC, repeat_at DESC").where("inactivated_at IS NULL")
     scope :ringing, order("set_at DESC, repeat_at DESC").where("inactivated_at IS NULL AND (set_at < UTC_TIMESTAMP() OR (repeat_at IS NOT NULL AND repeat_at < UTC_TIMESTAMP()))")
   
     def symbols
       "⚠" if ringing?
     end
+    
+    
+    def inactivate!
+      update_attributes(:inactivated_at => Time.current)
+    end
   
-    def ringing?
-      (inactivated_at.blank? and (set_at < Time.zone.now or (repeat_at and repeat_at < Time.zone.now))) ? true : false
+    def is_pending?
+      inactivated_at.blank? and (set_at > Time.current or (repeat_at.present? and repeat_at > Time.current))
+    end
+    
+    def is_inactivated?
+      inactivated_at.present? and inactivated_at < Time.current
+    end
+  
+    def is_ringing?
+      inactivated_at.blank? and (set_at < Time.current or (repeat_at.present? and repeat_at < Time.current))
     end
   
     def inactivated_at_bool=(inactivated_at_bool)
       if inactivated_at_bool.nil?
         self.inactivated_at = ''
       elsif self.inactivated_at.blank?
-        self.inactivated_at = Time.zone.now
+        self.inactivated_at = Time.current
       end
-    end
-  
-    def types
-      ['Allele', 'Cage', 'Mouse', 'Oligo']
-    end
-  
+    end  
   
     private
   
