@@ -7904,3 +7904,343 @@ Mysql2::Error: Table 'alarm_it.alarmables' doesn't exist: DELETE FROM alarmables
   [1m[35m (0.1ms)[0m  COMMIT
   [1m[36mAlarmIt::Alarm Load (0.4ms)[0m  [1mSELECT `alarms`.* FROM `alarms` WHERE `alarms`.`alarmer_id` = 677 AND `alarms`.`alarmer_type` = 'Alarmer' ORDER BY alarms.set_at ASC LIMIT 1[0m
   [1m[35mAlarmable Load (0.2ms)[0m  SELECT `alarmables`.* FROM `alarmables` WHERE `alarmables`.`id` IN (661)
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.4ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM alarms
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('pablo')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM alarms
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('pablo')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM alarms
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('pablo')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  DELETE FROM alarms
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('pablo')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.5ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (695, 'Alarmable', 712, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (696, 'Alarmable', 713, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (697, 'Alarmable', 714, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (698, 'Alarmable', 715, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (699, 'Alarmable', 716, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (700, 'Alarmable', 717, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (701, 'Alarmable', 718, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mAlarmIt::Alarm Load (0.3ms)[0m  [1mSELECT `alarms`.* FROM `alarms` WHERE (inactivated_at IS NULL) ORDER BY alarms.set_at ASC, set_at DESC, repeat_at DESC[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarms
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('pablo')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (702, 'Alarmable', 719, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  DELETE FROM alarms
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('pablo')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (703, 'Alarmable', 720, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarms
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('pablo')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (704, 'Alarmable', 721, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  DELETE FROM alarms
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('pablo')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (705, 'Alarmable', 722, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mUPDATE `alarms` SET `inactivated_at` = '2011-05-25 14:27:10', `updated_at` = '2011-05-25 14:27:10' WHERE `alarms`.`id` = 398[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mAlarmIt::Alarm Load (0.3ms)[0m  [1mSELECT `alarms`.* FROM `alarms` WHERE (inactivated_at IS NOT NULL) ORDER BY alarms.set_at ASC, set_at DESC, repeat_at DESC[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarms
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('pablo')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (706, 'Alarmable', 723, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mUPDATE `alarms` SET `inactivated_at` = '2011-05-25 14:27:10', `updated_at` = '2011-05-25 14:27:10' WHERE `alarms`.`id` = 399[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (707, 'Alarmable', 724, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  UPDATE `alarms` SET `updated_at` = '2011-05-25 14:27:10', `inactivated_at` = '2011-05-25 14:27:10' WHERE `alarms`.`id` = 400
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarms
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('pablo')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (708, 'Alarmable', 725, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mUPDATE `alarms` SET `updated_at` = '2011-05-25 14:27:10', `inactivated_at` = '2011-05-25 14:27:10' WHERE `alarms`.`id` = 401[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (709, 'Alarmable', 726, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  UPDATE `alarms` SET `set_at` = '2011-05-25 12:27:10', `updated_at` = '2011-05-25 14:27:10' WHERE `alarms`.`id` = 402
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mAlarmIt::Alarm Load (0.3ms)[0m  SELECT `alarms`.* FROM `alarms` WHERE (inactivated_at IS NULL AND (set_at < UTC_TIMESTAMP() OR (repeat_at IS NOT NULL AND repeat_at < UTC_TIMESTAMP()))) ORDER BY alarms.set_at ASC, set_at DESC, repeat_at DESC
+  [1m[36m (0.6ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('pablo')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (710, 'Alarmable', 727, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'alarm', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  UPDATE `alarms` SET `updated_at` = '2011-05-25 14:27:10', `set_at` = '2011-05-25 12:27:10' WHERE `alarms`.`id` = 403
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarms
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM alarms
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('alarmer')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  DELETE FROM alarms
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM alarmables[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmers
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmers` (`name`) VALUES ('alarmer')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (711, 'Alarmable', 729, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'don\'t forget to do it', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `alarms` WHERE `alarms`.`alarmer_id` = 729 AND `alarms`.`alarmer_type` = 'Alarmer'
+  [1m[36mAlarmIt::Alarm Load (0.3ms)[0m  [1mSELECT `alarms`.* FROM `alarms` WHERE `alarms`.`alarmer_id` = 729 AND `alarms`.`alarmer_type` = 'Alarmer' ORDER BY alarms.set_at ASC[0m
+  [1m[35mAlarmable Load (0.2ms)[0m  SELECT `alarmables`.* FROM `alarmables` WHERE `alarmables`.`id` IN (711)
+  [1m[36m (0.5ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('alarmer')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (712, 'Alarmable', 730, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'don\'t forget to do it', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mAlarmIt::Alarm Load (0.4ms)[0m  [1mSELECT `alarms`.* FROM `alarms` WHERE `alarms`.`alarmer_id` = 730 AND `alarms`.`alarmer_type` = 'Alarmer' ORDER BY alarms.set_at ASC LIMIT 1[0m
+  [1m[35mAlarmable Load (0.2ms)[0m  SELECT `alarmables`.* FROM `alarmables` WHERE `alarmables`.`id` IN (712)
+  [1m[36m (0.4ms)[0m  [1mDELETE FROM alarms[0m
+  [1m[35m (0.3ms)[0m  DELETE FROM alarmables
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM alarmers[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `alarmables` (`name`) VALUES ('thiz_obzect')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `alarmers` (`name`) VALUES ('alarmer')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `alarms` (`alarmable_id`, `alarmable_type`, `alarmer_id`, `alarmer_type`, `created_at`, `description`, `inactivated_at`, `name`, `repeat_at`, `set_at`, `updated_at`) VALUES (713, 'Alarmable', 731, 'Alarmer', '2011-05-25 14:27:10', NULL, NULL, 'don\'t forget to do it', NULL, '2011-05-27 14:27:10', '2011-05-25 14:27:10')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+  [1m[36mAlarmIt::Alarm Load (0.4ms)[0m  [1mSELECT `alarms`.* FROM `alarms` WHERE `alarms`.`alarmer_id` = 731 AND `alarms`.`alarmer_type` = 'Alarmer' ORDER BY alarms.set_at ASC LIMIT 1[0m
+  [1m[35mAlarmable Load (0.2ms)[0m  SELECT `alarmables`.* FROM `alarmables` WHERE `alarmables`.`id` IN (713)
