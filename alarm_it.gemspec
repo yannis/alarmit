@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = "alarm_it"
-  s.version     = '0.0.0'
-  s.platform    = Gem::Platform::RUBY
+  s.version = '0.0.0'
+  # s.platform = Gem::Platform::RUBY
   
   s.authors = ["Yannis Jaquet"]
   s.date = %q{2011-05-24}
