@@ -1,8 +1,6 @@
-$:.push File.expand_path("../lib", __FILE__)
-
 Gem::Specification.new do |s|
   s.name = "alarm_it"
-  s.version     = '0.1'
+  s.version     = '0.0.0'
   s.platform    = Gem::Platform::RUBY
   
   s.authors = ["Yannis Jaquet"]

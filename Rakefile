@@ -16,21 +16,3 @@ begin
 rescue LoadError
   puts "Rspec not available. Install it with: gem install rspec"  
 end
-
-
-begin
-  require 'jeweler'
-  Jeweler::Tasks.new do |gemspec|
-    gemspec.name = "alarm_it"
-    gemspec.version = '0.1'
-    gemspec.summary = "With AlarmIt, you could attach alarms to a single model."
-    gemspec.description = "With AlarmIt, you could attach alarms to a single model."
-    gemspec.email = "suvar3_7@mac.com"
-    gemspec.homepage = ""
-    gemspec.authors = ["Yannis Jaquet"]
-    gemspec.files =  FileList["[A-Z]*", "{generators,lib,spec,rails}/**/*"] - FileList["**/*.log"]
-  end
-  Jeweler::GemcutterTasks.new
-rescue LoadError
-  puts "Jeweler not available. Install it with: gem install jeweler"
-end
