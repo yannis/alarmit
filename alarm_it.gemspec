@@ -1,9 +1,8 @@
 $:.push File.expand_path("../lib", __FILE__)
-require "alarm_it/version"
 
 Gem::Specification.new do |s|
   s.name = "alarm_it"
-  s.version     = AlarmIt::VERSION
+  s.version     = '0.1'
   s.platform    = Gem::Platform::RUBY
   
   s.authors = ["Yannis Jaquet"]
@@ -13,7 +12,7 @@ Gem::Specification.new do |s|
   s.email = %q{suvar3_7@mac.com}
   
   s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.test_files    = `git ls-files -- {spec}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 

@@ -1,4 +1,4 @@
-ActiveRecord::Schema.define :version => 0 do  
+ActiveRecord::Schema.define :version => 0.1 do  
   create_table :alarms do |t|
     t.string :name
     t.text :description
