@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name = "alarm_it"
-  s.version = '0.0.0'
+  s.version = '0.0.1'
   # s.platform = Gem::Platform::RUBY
   
   s.authors = ["Yannis Jaquet"]
-  s.date = %q{2011-05-24}
+  s.date = %q{2011-09-01}
   s.description = %q{Associate alarms to any model}
   s.summary = %q{Associate alarms to any model}
   s.email = %q{suvar3_7@mac.com}
@@ -14,12 +14,14 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency "rails", "~> 3.1.0.rc1"
+  
+  s.add_dependency "rake", "0.9.2"
+  s.add_dependency "rails", "3.1.0"
   s.add_dependency "mysql2", "~> 0.3.2"
-  s.add_dependency "will_paginate", "~>3.0.pre2"
+  # s.add_dependency "will_paginate", "~>3.0.pre2"
   
   s.add_development_dependency "rspec", "~> 2.6.0"
   s.add_development_dependency 'shoulda-matchers'
-  s.add_development_dependency 'factory_girl'
+  # s.add_development_dependency 'factory_girl'
 end
 

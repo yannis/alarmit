@@ -25,6 +25,9 @@ describe AlarmIt::Alarm do
     it "should be among the pending alarms" do
       AlarmIt::Alarm.pending.include?(alarm)
     end
+    it "should be among the status=pending alarms" do
+      AlarmIt::Alarm.status('pending').include?(alarm)
+    end
     it "should be pending" do
       alarm.is_pending?.should be_true
     end
@@ -49,9 +52,15 @@ describe AlarmIt::Alarm do
       it "should be inactivated" do
         alarm.is_inactivated?.should be_true
       end
+      it "should be among the status=inactivated alarms" do
+        AlarmIt::Alarm.status('inactivated').include?(alarm)
+      end
     
       it "should not be pending" do
         alarm.is_pending?.should_not be_true
+      end
+      it "should not be among the status=pending alarms" do
+        !AlarmIt::Alarm.status('pending').include?(alarm)
       end
     
       it "should not be ringing" do

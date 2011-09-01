@@ -16,10 +16,18 @@ module AlarmIt
   
     before_validation :set_set_at
   
-    default_scope order("alarms.set_at ASC")
     scope :inactivated, order("set_at DESC, repeat_at DESC").where("inactivated_at IS NOT NULL")
     scope :pending, order("set_at DESC, repeat_at DESC").where("inactivated_at IS NULL")
     scope :ringing, order("set_at DESC, repeat_at DESC").where("inactivated_at IS NULL AND (set_at < UTC_TIMESTAMP() OR (repeat_at IS NOT NULL AND repeat_at < UTC_TIMESTAMP()))")
+    scope :status, lambda{|status|
+      if status == 'ringing'
+        ringing
+      elsif status == 'pending'
+        pending
+      elsif status == 'inactivated'
+        inactivated
+      end
+    }
   
     def symbols
       "⚠" if ringing?
